@@ -1,0 +1,13 @@
+{% extends "ksc_page.html" %}
+
+
+{% block blogcontent %}
+
+{{ page.html|safe }}
+
+<div class="row">
+<center> <p> Page Last Updated On {{ page.date.strftime('%A, %d, %B, %Y') }} </p> </center>
+</div>
+
+{% endblock %}
+
